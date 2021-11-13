@@ -1,2 +1,4 @@
 Three.Three.bin/
 Three.Three.obj/
+*in/
+*bj/
