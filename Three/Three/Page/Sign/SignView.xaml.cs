@@ -1,5 +1,4 @@
-﻿using Panuon.UI.Silver;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,16 +13,17 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Three
+namespace Three.Page.Sign
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// SignView.xaml 的交互逻辑
     /// </summary>
-    public partial class MainWindow : WindowX
+    public partial class SignView : UserControl
     {
-        public MainWindow()
+        public SignView()
         {
-            InitializeComponent();//Legend
+            InitializeComponent();
+            DataContext = SignViewModel.GetInstance();
         }
     }
 }

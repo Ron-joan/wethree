@@ -1,12 +1,39 @@
-﻿<Window x:Class="Three.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Three"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+﻿<pu:WindowX 
+            x:Class="Three.MainWindow"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:local="clr-namespace:Three"
+            mc:Ignorable="d"
+            d:DesignHeight="618" d:DesignWidth="1000"
+            Background="{DynamicResource MaterialDesignPaper}"
+            xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver" xmlns:memory="clr-namespace:Three.Page.Memory" xmlns:tasktable="clr-namespace:Three.Page.TaskTable" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" xmlns:sign="clr-namespace:Three.Page.Sign"
+    pu:WindowXCaption.Height="36">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="382*"/>
+            <RowDefinition Height="618*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="618*"/>
+            <ColumnDefinition Width="382*"/>
+        </Grid.ColumnDefinitions>
+        
+        <materialDesign:Card
+             Grid.Column="1"
+             Margin="5"
+             Grid.RowSpan="2">
+            <memory:MemoryView />
+        </materialDesign:Card>
+        <materialDesign:Card Grid.Row="1" Margin="5" >
+            <tasktable:TaskTableView />
+        </materialDesign:Card>
+
+        <materialDesign:Card Margin="5" >
+            <sign:SignView/>
+        </materialDesign:Card>
+
 
     </Grid>
-</Window>
+    </pu:WindowX>

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\King\Documents\GitHub\wethree\Three\Three\App.xaml
-11407045341
+5-1758069249
 
-5804126510
-194-164764702
-MainWindow.xaml;
+151748107879
+203164237521
+MainWindow.xaml;Page\Legend\LegendView.xaml;Page\Memory\MemoryView.xaml;Page\Sign\SignView.xaml;Page\TaskTable\TaskTableView.xaml;
 
-False
+True
 

@@ -1,5 +1,4 @@
-﻿using Panuon.UI.Silver;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,16 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Three
+namespace Three.Page.TaskTable
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// TaskTableView.xaml 的交互逻辑
     /// </summary>
-    public partial class MainWindow : WindowX
+    public partial class TaskTableView : UserControl
     {
-        public MainWindow()
+        public TaskTableView()
         {
-            InitializeComponent();//Legend
+            InitializeComponent();
         }
     }
 }
